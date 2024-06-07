@@ -1,4 +1,4 @@
-const INPUT_PATH = "../inputs/요세푸스문제.txt";
+const INPUT_PATH = "./inputs/요세푸스문제.txt";
 
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : INPUT_PATH;
