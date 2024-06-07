@@ -1,5 +1,5 @@
 //INPUT_PATH에 오늘 문제에 해당하는 input파일경로를 적어주세요
-const INPUT_PATH = "../inputs/inputBoilerPlate.txt";
+const INPUT_PATH = "./inputs/inputBoilerPlate.txt";
 
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : INPUT_PATH;
