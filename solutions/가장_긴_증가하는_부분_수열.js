@@ -4,10 +4,6 @@ const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : INPUT_PATH;
 const input = fs.readFileSync(filePath).toString().trim().split("\n");
 
-// 각인자의 배열을 순회하면서 큰수의 경우 length 를 1씩 증가시키고
-// 각 인자마다 수열의 갯수를 구해서 그중 큰 수를 반환한다.
-
-
 function solution(inputArguments) {
   const [N, list] = inputArguments;
   const numberList = list.split(" ").map(Number);
