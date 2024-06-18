@@ -10,24 +10,26 @@ function solution(inputArguments) {
   const nestedList = numbersquare.map(e => [...e].map(Number));
 
   const squareSizeList = [];
-  let width = 1;
-  let current;
-  
+
   for (let n = 0; n < N; n++) {
     for (let m = 0; m < M; m++) {
-      current = nestedList[n][m];
+      let current = nestedList[n][m];
 
       for (let j = 1; j + n < N && j + m < M; j++) {
-        if (current === nestedList[n + j][m] && current === nestedList[n][m + j]) {
-          width++;
+        if (
+          current === nestedList[n + j][m] &&
+          current === nestedList[n][m + j] &&
+          current === nestedList[n + j][m + j]
+          ) {
+          squareSizeList.push((1 + j) ** 2);
         }
       }
-
-      squareSizeList.push(width ** 2);
-      width = 1;
     }
   }
 
+  if (squareSizeList.length === 0) {
+    return 1;
+  }
   return Math.max(...squareSizeList);
 }
 
