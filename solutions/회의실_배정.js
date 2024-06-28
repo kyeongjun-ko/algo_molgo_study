@@ -11,17 +11,17 @@ function solution(inputArguments) {
   let meetingCount = 0;
 
   for (let i = 1; i <= N; i++) {
-      const [startTime, endTime] = list[i].split(" ").map(Number);
-      meetingTimes.push({ startTime, endTime });
+    const [startTime, endTime] = list[i].split(" ").map(Number);
+    meetingTimes.push({ startTime, endTime });
   }
 
   meetingTimes.sort((a, b) => a.endTime - b.endTime);
 
   for (let i = 0; i < N; i++) {
-      if (currentTime === meetingTimes[i].startTime) {
-        currentTime = meetingTimes[i].endTime;
-        meetingCount++;
-      }
+    if (currentTime === meetingTimes[i].startTime) {
+      currentTime = meetingTimes[i].endTime;
+      meetingCount++;
+    }
   }
 
   return meetingCount;
