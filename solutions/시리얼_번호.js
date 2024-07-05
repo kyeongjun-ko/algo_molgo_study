@@ -12,24 +12,9 @@ function solution(inputArguments) {
   const getNumberSum = (string) => {
     let maxNumberSum = 0;
 
-    for (let i = 0; i < guitarNumber; i++) {
-      let numberSum = 0;
-
-      if (isNumber(string[i])) {
-        numberSum += Number(string[i]);
-
-        for (let j = i + 1; j < guitarNumber; j++) {
-          if (isNumber(string[j])) {
-            numberSum += Number(string[j]);
-          } else {
-
-            break;
-          }
-        }
-
-        if (maxNumberSum < numberSum) {
-          maxNumberSum = numberSum;
-        }
+    for (const str of string) {
+        if (isNumber(str)) {
+        maxNumberSum += Number(str);
       }
     }
 
