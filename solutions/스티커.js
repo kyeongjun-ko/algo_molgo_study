@@ -10,7 +10,7 @@ function solution(inputArguments) {
   
   let sum;
 
-  for (let i = 0; i < testCase; i++) {
+  for (let i = 0; i < testNumber; i++) {
   }
 
   return sum;
