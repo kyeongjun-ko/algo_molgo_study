@@ -27,9 +27,8 @@
 <br>
 
 ## 🤹🏻‍♀️ Members
-총 원 11 명
+총 원 9 명
 - [오성호](https://github.com/tjd985)
-- [이수진](https://github.com/zzinLee)
 - [한민지](https://github.com/alswla)
 - [조양우](https://github.com/erv2bh)
 - [백종우](https://github.com/jwbaeck)
@@ -38,4 +37,3 @@
 - [금서하](https://github.com/seohag)
 - [채민석](https://github.com/sht02048)
 - [홍성준](https://github.com/suhjuho)
-- [권성한](https://github.com/sunghankwon)
